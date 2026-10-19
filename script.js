@@ -10,9 +10,9 @@
   function onScroll(){ if(header){ header.classList.toggle('is-solid', window.scrollY>140); } if(fab){ fab.classList.toggle('show', window.scrollY>560); } }
   window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
   var sf=document.getElementById('search');
-  if(sf){sf.addEventListener('submit',function(e){e.preventDefault();var q=(document.getElementById('q').value||'').trim();var p=document.getElementById('price').value;var b=document.getElementById('beds').value;var msg='Hi Kanekalon, I am looking for a home'+(q?' in '+q:'')+'. Price: '+p+'. Bedrooms: '+b+'.';window.location.href='sms:+15016157709?&body='+encodeURIComponent(msg);});}
+  if(sf){sf.addEventListener('submit',function(e){e.preventDefault();window.open('https://kanekalonkindle.epiquerealty.com/listing','_blank','noopener');});}
   var vf=document.getElementById('value-form');
-  if(vf){vf.addEventListener('submit',function(e){e.preventDefault();var a=(document.getElementById('addr').value||'').trim();var m=(document.getElementById('vemail').value||'').trim();window.location.href='mailto:kanekalonkindle@epique.me?subject='+encodeURIComponent('Home valuation request')+'&body='+encodeURIComponent('Property address: '+a+'\nMy email: '+m);});}
+  if(vf){vf.addEventListener('submit',function(e){e.preventDefault();window.open('https://kanekalonkindle.epiquerealty.com/evaluation','_blank','noopener');});}
   var els=[].slice.call(document.querySelectorAll('.reveal'));
   if(!('IntersectionObserver' in window)){els.forEach(function(el){el.classList.add('in');});return;}
   var io=new IntersectionObserver(function(entries){
