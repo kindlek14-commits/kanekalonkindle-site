@@ -6,7 +6,7 @@
     btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false');if(header)header.classList.toggle('menu-open',o);});
     nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');if(header)header.classList.remove('menu-open');}});
   }
-  var fab=document.querySelector('.direct-fab');
+  var fab=document.querySelector('.kenise-fab');
   function onScroll(){ if(header){ header.classList.toggle('is-solid', window.scrollY>140); } if(fab){ fab.classList.toggle('show', window.scrollY>560); } }
   window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
   var sf=document.getElementById('search');
