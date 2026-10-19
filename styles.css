@@ -427,3 +427,5 @@ p{margin:0 0 1em}
 .about-lic{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.7);margin:-6px 0 18px}
 .direct-disclose a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 .form-note a{color:inherit;text-decoration:underline}
+.direct-disclose{display:block!important}
+.direct-disclose a{white-space:nowrap}
